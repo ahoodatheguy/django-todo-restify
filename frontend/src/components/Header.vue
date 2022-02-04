@@ -17,6 +17,7 @@ export default {
 header {
 	margin-top: 20px;
 	margin-bottom: 20px;
+	padding-left: 10px;
 	display: flex;
 }
 </style>

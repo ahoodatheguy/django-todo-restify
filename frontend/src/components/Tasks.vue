@@ -1,5 +1,5 @@
 <template>
-	<div v-for="event in events" :key="event.id">
+	<div v-for="event in events" :key="event.id" class="task-list">
 		<h3 class="task-name" @click="deleteTask(event.id)">{{event.name}}</h3>
 		<p>{{event.description}}</p>
 	</div>
@@ -37,5 +37,9 @@ export default {
 	color: red;
 	cursor: pointer;
 	text-decoration: line-through;
+}
+
+.task-list {
+	padding-left: 25px;
 }
 </style>
