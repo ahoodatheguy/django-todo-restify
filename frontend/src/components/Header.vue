@@ -16,6 +16,7 @@ export default {
 <style scoped>
 header {
 	margin-top: 20px;
+	margin-bottom: 20px;
 	display: flex;
 }
 </style>
