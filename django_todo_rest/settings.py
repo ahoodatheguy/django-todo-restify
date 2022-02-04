@@ -40,6 +40,9 @@ INSTALLED_APPS = [
 
     # Plugins
     'rest_framework',
+
+    # Apps
+    'api.apps.ApiConfig'
 ]
 
 MIDDLEWARE = [
