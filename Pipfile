@@ -8,6 +8,7 @@ django = "*"
 django-rest-framework = "*"
 flake8 = "*"
 autopep8 = "*"
+django-cors-headers = "*"
 
 [dev-packages]
 
