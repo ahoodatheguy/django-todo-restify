@@ -1,7 +1,6 @@
 <template>
 	<div class="app">
 		<Header text="REST TODOs"/>
-		<Button text="Create New TODO" btnType="btn-primary" style="align-content: center;" :onClick="createTask"/>
 		<Tasks />
 	</div>
 </template>
@@ -9,7 +8,6 @@
 <script>
 import Header from './components/Header.vue'
 import Tasks from './components/Tasks.vue'
-import Button from './components/Button.vue'
 import axios from 'axios'
 
 export default {
@@ -18,7 +16,6 @@ export default {
 	components: {
 		Header,
 		Tasks,
-		Button
 	},
 	methods: {
 		createTask() {
