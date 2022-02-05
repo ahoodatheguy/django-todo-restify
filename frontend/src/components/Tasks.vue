@@ -1,6 +1,8 @@
 <template>
 	<div v-for="event in events" :key="event.id" class="task-list">
-		<h3 class="task-name" @click="deleteTask(event.id)">{{event.name}}</h3>
+		<div class="task-header">
+			<h3 class="task-name" @click="deleteTask(event.id)">{{event.name}}</h3>
+		</div>
 		<p>{{event.description}}</p>
 	</div>
 </template>
@@ -19,7 +21,7 @@ export default {
 		deleteTask(id) {
 			axios
 			.delete(`http://127.0.0.1:8000/api/delete-task/${id}`)
-			.then(() => location.reload)
+			location.reload()
 		}
 	},
 	created() {
@@ -41,5 +43,6 @@ export default {
 
 .task-list {
 	padding-left: 25px;
+	padding-right: 25px;
 }
 </style>
